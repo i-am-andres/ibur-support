@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibur - Soporte</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .section p {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .faq-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            border-left: 4px solid #667eea;
+        }
+
+        .faq-item h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .faq-item p {
+            font-size: 15px;
+            color: #666;
+            margin: 0;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .contact-box h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .contact-box a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 12px 30px;
+            border-radius: 25px;
+            display: inline-block;
+            margin-top: 10px;
+            transition: all 0.3s;
+        }
+
+        .contact-box a:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .feature {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .feature-icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .feature h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .feature p {
+            font-size: 14px;
+            color: #666;
+            margin: 0;
+        }
+
+        .footer {
+            background: #f8f9fa;
+            padding: 30px;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 36px;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            .section h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>💰 Ibur</h1>
+            <p>Tu gestor de finanzas personales</p>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <!-- Sobre la App -->
+            <div class="section">
+                <h2>📱 Sobre Ibur</h2>
+                <p>
+                    Ibur es una aplicación de gestión de finanzas personales diseñada para ayudarte a controlar tus ingresos y gastos de manera simple y efectiva. Con Ibur puedes:
+                </p>
+                <div class="features">
+                    <div class="feature">
+                        <div class="feature-icon">💸</div>
+                        <h3>Registrar Transacciones</h3>
+                        <p>Añade ingresos y gastos fácilmente</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🎤</div>
+                        <h3>Entrada por Voz</h3>
+                        <p>Crea transacciones hablando</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">📊</div>
+                        <h3>Estadísticas</h3>
+                        <p>Visualiza tus finanzas con gráficos</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">📁</div>
+                        <h3>Exportar Datos</h3>
+                        <p>Descarga tus datos en CSV</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Preguntas Frecuentes -->
+            <div class="section">
+                <h2>❓ Preguntas Frecuentes</h2>
+                
+                <div class="faq-item">
+                    <h3>¿Cómo creo una transacción?</h3>
+                    <p>
+                        Presiona el botón "+" en la pantalla principal, selecciona el tipo (ingreso o gasto), ingresa el monto, selecciona una categoría y cuenta, y presiona "Guardar".
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>¿Cómo uso la entrada por voz?</h3>
+                    <p>
+                        Al crear una transacción, presiona el botón del micrófono y di tu transacción. Por ejemplo: "Gasté 50 mil en comida". La app detectará automáticamente el monto, tipo y categoría.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>¿Cómo exporto mis datos?</h3>
+                    <p>
+                        Ve a Más → Configuración → Exportar Transacciones. Tus datos se descargarán en formato CSV que puedes abrir en Excel o Google Sheets.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>¿Cómo creo categorías personalizadas?</h3>
+                    <p>
+                        Ve a Más → Categorías → Presiona el botón "+" → Ingresa el nombre, selecciona un icono y color → Guardar.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>¿Cómo elimino mi cuenta?</h3>
+                    <p>
+                        Ve a Más → Configuración → Cuenta → Eliminar Cuenta. Se te pedirá confirmación y se eliminarán permanentemente todos tus datos.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>¿Mis datos están seguros?</h3>
+                    <p>
+                        Sí. Todos tus datos se almacenan localmente en tu dispositivo. No se envían a ningún servidor externo. Puedes proteger la app con un PIN de seguridad desde Configuración.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>¿Puedo usar la app sin internet?</h3>
+                    <p>
+                        Sí. Ibur funciona completamente offline. Solo necesitas internet para descargar la app inicialmente.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>¿Cómo cambio entre modo claro y oscuro?</h3>
+                    <p>
+                        Ve a Más → Configuración → Modo Oscuro. Activa o desactiva el switch según tu preferencia.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Privacidad -->
+            <div class="section">
+                <h2>🔒 Privacidad</h2>
+                <p>
+                    <strong>Ibur respeta tu privacidad.</strong> Todos tus datos financieros se almacenan localmente en tu dispositivo. No recopilamos, compartimos ni enviamos tu información a servidores externos.
+                </p>
+                <p>
+                    <strong>Datos que se almacenan localmente:</strong>
+                </p>
+                <ul style="margin-left: 20px; color: #555;">
+                    <li>Transacciones (ingresos y gastos)</li>
+                    <li>Categorías personalizadas</li>
+                    <li>Cuentas</li>
+                    <li>Espacios</li>
+                    <li>Configuración de la app</li>
+                </ul>
+                <p style="margin-top: 15px;">
+                    <strong>Permisos utilizados:</strong>
+                </p>
+                <ul style="margin-left: 20px; color: #555;">
+                    <li><strong>Micrófono:</strong> Solo para la función de entrada por voz (opcional)</li>
+                    <li><strong>Reconocimiento de voz:</strong> Para procesar comandos de voz (opcional)</li>
+                    <li><strong>Almacenamiento:</strong> Para guardar archivos exportados</li>
+                </ul>
+            </div>
+
+            <!-- Contacto -->
+            <div class="section">
+                <div class="contact-box">
+                    <h3>📧 ¿Necesitas Ayuda?</h3>
+                    <p>Si tienes alguna pregunta, sugerencia o problema, no dudes en contactarnos:</p>
+                    <a href="mailto:charlescuellar@hotmail.com">charlescuellar@hotmail.com</a>
+                </div>
+            </div>
+
+            <!-- Información Adicional -->
+            <div class="section">
+                <h2>ℹ️ Información Adicional</h2>
+                <p><strong>Desarrollador:</strong> Charles Cuellar</p>
+                <p><strong>Versión:</strong> 1.0.2</p>
+                <p><strong>Plataforma:</strong> iOS</p>
+                <p><strong>Requisitos:</strong> iOS 13.0 o superior</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy; 2026 Ibur. Todos los derechos reservados.</p>
+            <p>Hecho con ❤️ para ayudarte a gestionar tus finanzas</p>
+        </div>
+    </div>
+</body>
+</html>
